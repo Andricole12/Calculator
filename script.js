@@ -1,11 +1,13 @@
 let characters = Array("rock", "paper", "scissors");
 
+// Computer-Generated Answer
 function computerPlay(){
     let computerAnswer = characters[Math.floor(Math.random() * characters.length)];
     console.log("Computer chose " + computerAnswer + "!");
     return computerAnswer;
 }
 
+// Player-Chosen Answer
 function playerInput(){
     let playerAnswer = prompt("Rock, Paper, Scissors!!")
     playerAnswer = playerAnswer.toLowerCase();
@@ -19,6 +21,7 @@ function playerInput(){
     }
 }
 
+// Finds who is the winner
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == computerSelection){
@@ -38,6 +41,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+// Rounds to play
 function game() {
     let rounds = prompt("How many rounds?");
     let playerScore = 0;
