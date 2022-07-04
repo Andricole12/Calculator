@@ -13,8 +13,7 @@ function playerInput(){
     if (characters.indexOf(playerAnswer) !== -1){
         console.log("Player chose " + playerAnswer + "!");
         return (playerAnswer);
-    }
-    else{
+    } else{
         console.log("Invalid input. Type rock paper or scissors.");
         playerInput();
     }
@@ -24,20 +23,16 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == computerSelection){
         console.log("A Draw!");
-    }
-    else if (playerSelection == "scissors" && computerSelection == "paper"){
+    } else if (playerSelection == "scissors" && computerSelection == "paper"){
         console.log("You Win!");
         return true;
-    }
-    else if (playerSelection == "rock" && computerSelection == "scissors"){
+    } else if (playerSelection == "rock" && computerSelection == "scissors"){
         console.log("You Win!");
         return true;
-    }
-    else if (playerSelection == "paper" && computerSelection == "rock"){
+    } else if (playerSelection == "paper" && computerSelection == "rock"){
         console.log("You Win!");
         return true;
-    }
-    else{
+    } else{
         console.log("Computer Wins!");
         return false;
     }
@@ -53,8 +48,7 @@ function game() {
         if (round == true){
             playerScore += 1;
             console.log(playerScore);
-        }     
-        else if (round == false){
+        } else if (round == false){
             computerScore += 1;
             console.log(computerScore);
         }
@@ -62,11 +56,9 @@ function game() {
 
     if (playerScore > computerScore){
         console.log("The Winner is You!")
-    } 
-    else if (playerScore < computerScore){
+    } else if (playerScore < computerScore){
         console.log("Oh no! You lost:/")
-    }
-    else{
+    } else{
         console.log("wow it's a tie!")
     }
     
