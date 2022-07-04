@@ -2,6 +2,7 @@ let characters = Array("rock", "paper", "scissors");
 
 function computerPlay(){
     let computerAnswer = characters[Math.floor(Math.random() * characters.length)];
+    console.log("Computer chose " + computerAnswer + "!");
     return computerAnswer;
 }
 
@@ -10,7 +11,7 @@ function playerInput(){
     playerAnswer = playerAnswer.toLowerCase();
 
     if (characters.indexOf(playerAnswer) !== -1){
-        console.log(playerAnswer);
+        console.log("Player chose " + playerAnswer + "!");
         return (playerAnswer);
     }
     else {
